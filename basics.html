@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="basics.css">
+<head>
+    
+    <style>
+        #a{
+            background-color: black;
+            color: red;
+            font-size: 60px;
+            width: 150px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h2 id="a">hello</h2>
+    <!-- <h2 >hi</h2>
+    <button onclick="changetext(this)">click</button> -->
+    <p id="text">This is some sample </p>
+<button onclick="increaseSize()">Increase Size</button>
+
+    <script>
+        let textSize = 15;
+
+        // function changetext(){
+        //     document.getElementById("thiru").innerHTML=textSize
+
+
+        //     textSize += 7;
+
+        // }
+        function increaseSize() {
+  textSize += 5;
+  document.getElementById('text').style.fontSize = textSize + 'px';
+
+        }
+
+
+
+    </script>
+     <button onclick="decreasesize()">decreasesize </button>
+     
+         <script>
+             let fontSize = 16;
+             function decreasesize() {
+  textSize -=3;
+ 
+  document.getElementById('text').style.fontSize = fontSize + 'px';
+}
+</script>
+
+
+
+
+            <div class="a">
+                <h3>hello</h3>
+                <button class="hover-text">Hover Me</button>
+
+
+            </div>
+
+</body>
+</html>
